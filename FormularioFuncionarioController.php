@@ -21,7 +21,7 @@ $_qntFilhos = $_POST['_qntfilhos'];
 
 if ( strlen($_cpf) != 11 )
 {
-	urlPrincipal();;
+	urlPrincipal();
 }
 
 if ( empty( trim($_funcionario) ) )
