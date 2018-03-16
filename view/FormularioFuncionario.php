@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+ require_once('../session/startSession.php');
+ ?>
+
 <head>
   <title>Folha de Pagamento</title>
-  <link rel="stylesheet" type="text/css" href="sispag.css">
+  <link rel="stylesheet" type="text/css" href="../css/sispag.css">
 </head>
  
 <body>
   <table>
-  <form action="FormularioFuncionarioController.php" method= "POST">
+  <form action="../controller/FormularioFuncionarioController.php" method= "POST">
    <caption class="titulo fonte"> <b>Calculo Salarial</b> </caption>
   
   <tr>

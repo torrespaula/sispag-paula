@@ -5,21 +5,24 @@
 # Programador(a): Paula Torres
 # Data da criação: 07/03/2018
 
+
+// Start the session
+//session_start();
+
 # Recebendo dados de Login
 
-require_once('library.php');
+require_once('../library/library.php');
+session_name("sispag");
 
+session_start();
 $_usuario = trim($_POST['_usuario']);
 $_senha = trim($_POST['_senha']);
 
+$_SESSION['_usuario']=$_usuario;
+$_SESSION['_senha']=$_senha;
+
 # Validação dos dados 
 
-if ($_usuario=='paula' && $_senha=='123456')
-{
-  urlPrincipal();
-}
-else
-{
-  header('Location: http://localhost/sispag-paula/LoginFormulario.html');
-}
+verificarLogin($_usuario,$_senha);
+
 ?>

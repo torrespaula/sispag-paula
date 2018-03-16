@@ -1,13 +1,16 @@
+
+
 <!DOCTYPE html>
 <html>
+
 <!-- Página de login- Sispag -->
     <head>
     	<title>Pagina de Login</title>
-        <link rel="stylesheet" type="text/css" href="sispag.css">
+        <link rel="stylesheet" type="text/css" href="../css/sispag.css">
     </head>
  <body>
      <table>
-     <form action="LoginFormularioController.php" method= "POST">
+     <form action="../controller/LoginFormularioController.php" method= "POST">
      <caption class="titulo fonte"> <b>Login</b> </caption>
      <tr>
         <div class="container">

@@ -35,4 +35,18 @@ function inss ($_salarioBase)
 {
 	return $_salarioBase*0.08;
 }
+function verificarLogin ($_login, $_pass)
+{
+	if($_login=='paula' && $_pass=='123456')
+	{
+		$_SESSION['logado']= true;
+		$_SESSION['user']= trim($_POST['_usuario']);
+		header ('Location: http://localhost/sispag-paula/view/FormularioFuncionario.php');
+	}
+	else
+	{
+        $_SESSION['logado']= false;
+        header ('Location: http://localhost/sispag-paula/view/LoginFormulario.php');
+	}
+}
 ?>
